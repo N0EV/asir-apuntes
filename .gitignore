@@ -1,0 +1,43 @@
+# --- Herramientas de Virtualización (VirtualBox y Docker) ---
+*.vdi
+*.vbox
+*.vbox-prev
+*.vmdk
+*.iso
+*.ova
+*.ovf
+.docker/
+# Bloquea los volúmenes de datos locales que genera Docker
+**/data/db/
+**/mysql/
+**/wordpress/
+
+# --- Editores e IDEs (VS Code) ---
+.vscode/
+# Evita subir el historial de comandos local de tus terminales
+.bash_history
+.python_history
+
+# --- Automatización y Scripts (Bash / PowerShell) ---
+# Bloquea volcados de memoria y archivos temporales de ejecución
+*.log
+*.tmp
+*.bak
+# Archivos de estado de PowerShell
+.pscomplete
+
+# --- Seguridad y Credenciales (¡Crucial para ASIR!) ---
+# Claves privadas SSH y tokens que usarás en prácticas de redes/seguridad
+*.pem
+*.key
+*.pub
+.env
+.env.*
+!*.env.example
+secrets.*
+
+# --- Desarrollo Web (IAW) ---
+# Por si acaso usáis Node.js o PHP, esto evita colapsar Git
+node_modules/
+vendor/
+.npm/
