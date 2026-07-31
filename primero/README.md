@@ -14,26 +14,29 @@ Este apartado contiene los apuntes correspondientes a los módulos profesionales
 | **1709** | IPE I | Itinerario personal para la empleabilidad I | [Ver apuntes](asir-apuntes/primero/ipe1) |
 | **CL0036** | TSP | Transformación del Sistema Productivo | [Ver apuntes](asir-apuntes/primero/tsp) |
 
-## Normativas
+## Enlaces y Recursos de Interés
 
 Las normativas y leyes que regulan estas asignaturas se pueden consultar en los siguientes enlaces oficiales:
 
-* **Currículo Base y Título (ASIR):** Consulta la normativa oficial del ciclo en la [Página Título ASIR de la Junta de Castilla y León](https://jcyl.es).
-* **Asignaturas Optativas:** Revisa la regulación de los módulos transversales en la [Página Optativas Transversales](https://jcyl.es) para la materia TSP.
+* **Currículo Base y Título (ASIR):** Consulta la normativa oficial del ciclo en la [Ficha Técnica de ASIR en el Portal de Educación de la Junta de Castilla y León](https://www.educa.jcyl.es/fp/es/catalogo-titulos-modalidad-presencial/titulos-grado-superior/administracion-sistemas-informaticos-red).
+* **Asignaturas Optativas:** Revisa la regulación de los módulos de oferta común en el [Catálogo de Módulos Optativos de Carácter Transversal](https://www.educa.jcyl.es/fp/en/normativa-castilla-leon/catalogo-modulos-optativos/modulos-optativos-oferta-comun-caracter-transversal) de la Junta de Castilla y León, el cual incluye el módulo específico **Transformación del Sistema Productivo (TSP)**.
+
+> [!NOTE]
+> La lista de asignaturas optativas es elegida por el centro en el que se imparte el ciclo.
 
 ## Estructura de Directorios
 
 La organización de las carpetas dentro de este directorio se corresponde con las siglas oficiales de cada módulo:
 
 ```text
-.
+primero/
 ├── iso/      # Implantación de sistemas operativos
 ├── par/      # Planificación y administración de redes
 ├── fh/       # Fundamentos de hardware
 ├── gbd/      # Gestión de bases de datos
-├── lm-sgi/    # Lenguajes de marcas y sistemas de gestión de información
-├── ip/      # Inglés profesional (GS)
-├── ipe1/    # Itinerario personal para la empleabilidad I
+├── lm-sgi/   # Lenguajes de marcas y sistemas de gestión de información
+├── ing/      # Inglés profesional (GS)
+├── ipe1/     # Itinerario personal para la empleabilidad I
 └── tsp/      # Transformación del Sistema Productivo
 ```
 
