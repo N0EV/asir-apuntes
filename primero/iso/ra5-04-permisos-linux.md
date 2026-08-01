@@ -149,7 +149,7 @@ Permite que un archivo o directorio se ejecute con los privilegios del dueño o 
 * **SGID (`g+s`):** Si se aplica a un **directorio**, cualquier archivo nuevo creado dentro de él heredará automáticamente el **grupo** de la carpeta madre, en lugar del grupo del usuario que lo creó. Ideal para carpetas compartidas en equipo.
 
 ```bash
-\$ chmod g+s <carpeta_compartida>
+$ chmod g+s <carpeta_compartida>
 ```
 
 ##### La `t` (Sticky Bit o Bit de Permanencia)
@@ -157,7 +157,7 @@ Se aplica principalmente a directorios comunes o compartidos (como `/tmp`).
 * **Función (`+t`):** Protege los archivos dentro de una carpeta. Aunque todos tengan permisos de escritura en la carpeta, **solo el dueño de un archivo puede borrarlo o renombrarlo**. Evita que los usuarios se borren cosas entre sí.
 
 ```bash
-\$ chmod +t <carpeta_publica>
+$ chmod +t <carpeta_publica>
 ```
 
 - Ejemplos Prácticos para la Terminal
@@ -188,12 +188,12 @@ Aunque el comando `chown` a avanzado y ahora tiene la capacidad de cambiar tambi
 
 #### Cambiar solo el usuario (`chown`)
 ```bash
-\$ sudo chown <nuevo_usuario> <recurso>
+$ sudo chown <nuevo_usuario> <recurso>
 ```
 
 #### Cambiar solo el grupo (`chgrp`)
 ```bash
-\$ sudo chgrp <nuevo_grupo> <recurso>
+$ sudo chgrp <nuevo_grupo> <recurso>
 ```
 
 ### El comando moderno: `chown` unificado
