@@ -266,3 +266,34 @@ $ umask 0077
 
 >[!WARNING]
 >A partir de ese momento, cualquier archivo nuevo tendrá permisos `600` y cualquier directorio `700`.
+
+## Comando find con permisos
+Este comando nos sirve tambien para buscar archivos o carpetas basandonos en los metadatos, es decir que podemos buscar por permisos que tengan estos mismos pudiendo buscar coincidencia exacta o niveles de permisos.
+
+Si queremos que tengan exactamente un permiso u otro el parametro es `-perm` seguido de el número octal que queramos encontrar. Ejemplo:
+
+```bash
+find /ruta/donde/buscar -perm 555
+```
+
+Tambien podemos buscar con **al menos estos permisos** esto se hace con el prefijo `-` esto requiere saber quien tiene dichos permisos. Ejemplo:
+
+```bash
+find . -perm -600
+```
+
+Tambien se puede hacer busqueda por **cualquiera de estos permisos** esto nos permite detectar algun permiso que este activo sin importar el resto de ellos. Para esto se usa el prefijo `/` este funciona como un OR lógico. Ejemplo:
+
+```bash
+find . -perm /222
+```
+
+Esto se aplica tambien a que tipo de objeto buscas si es fichero o si es directorio. Ejemplos:
+
+```bash
+# Si es directorio
+find /var/www -type d -perm 755
+
+# Si es fichero
+find /home/usuario -type f -perm 644
+```
