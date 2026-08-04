@@ -297,3 +297,11 @@ find /var/www -type d -perm 755
 # Si es fichero
 find /home/usuario -type f -perm 644
 ```
+
+## Recursos compartidos
+En entornos reales es normal encontrar sistemas que tienen distinos SO por lo que para permitir compatir recursos entre ellos se ideo distintos sitemas para ello.
+
+Uno de ellos es **SMB**(Samba) es un protocolo utilizado para poder compartir utilizando Windows y en GNU/Linux mediante Samba.
+  - Este suele estar instalado como cliente SMB (smbclient) por defecto, para el servidor samba (smbd) debe de ser instalado y configurado para poder compartir los resursos desde GNU/Linux hacia Windows.
+
+Otro de ellos es **NFS** este es un protocolo de Unix y sistemas GNU/Linux, es dieal para redes GNU/Linux puras pero este no es directamente compatible con Windows ya que requiere características adicionales (Windows Pro o Enterprise) y configuración manual. Por lo que no es práctico en redes mixtas.
