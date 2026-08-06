@@ -147,3 +147,14 @@ Ubuntu usa systemd timers que es el equivalente a las tareas programadad de Wind
 comando: `systemctl list-timers`
 
 ## Accesibilidad
+Configuración --> Accesibilidad
+
+## Configuración de red
+
+### Desde GUI 
+Configuración --> Red --> Ethernet/Wifi
+
+### Desde terminal
+Ver la ip: `ip a`
+
+Probar conectividad: `ping 8.8.8.8` o `ping google.com`
