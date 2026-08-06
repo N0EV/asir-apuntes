@@ -22,6 +22,7 @@ Todos los /etc.
 Estos son:
 
 | Archivo | Función |
+| :---- | :---- |
 | /etc/passwd | información básica de los usuarios |
 | /etc/shadow | contraseñas cifradas y envejecimiento |
 | /etc/group | infomación de grupos |
