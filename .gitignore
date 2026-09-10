@@ -41,3 +41,6 @@ secrets.*
 node_modules/
 vendor/
 .npm/
+
+# ----------- Cualquier fichero que empiece por punto -----
+.*
