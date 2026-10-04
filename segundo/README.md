@@ -68,3 +68,22 @@ git clone --filter=blob:none --sparse https://github.com/N0EV/asir-apuntes.git
 cd asir-apuntes
 git sparse-checkout set segundo
 ```
+
+## Estructura documentos
+
+Los documentos siguen una estructura clara, siguiendo el principio de no mas de 3 clics de profundidad dentro del repositorio para ello se ha buscado una solución gracias a los nombres de los ficheros y el orden alfabético de las herramientas de explorador de archivos en cualquier SO.
+
+La estructura es la siguiente:
+- Persona:
+  - MIO: Hechos por mi.
+  - PRO: Hechos por el profesor.
+- RA's
+  - RA0X: Distinción de los RA siendo x el número de ra
+- Tipo de objeto:
+  - DG: Diagramas
+  - DOC: Documentos
+  - AP: Apuntes
+- Demas texto: una breve descripción del contenido
+- Extensión del fichero (.md, .pdf, .docx, .sql, etc...)
+
+Ejemplo: `MIO_RA01_DG_dhcp.md`
